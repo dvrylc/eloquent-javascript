@@ -2,7 +2,7 @@ var size = 8;
 var output = "";
 
 for (var i = 0; i < size; i++) {
-  // Initiate variables for this line 
+  // Initiate variables for this line
   var line = "",
       char1 = "",
       char2 = "";
