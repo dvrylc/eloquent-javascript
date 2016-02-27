@@ -1,16 +1,16 @@
-function every(array, func) {
+function every(arr, func) {
   var res = true;
   
-  array.forEach(function(el) {
+  arr.forEach(function(el) {
     res = func(el);
   });
   
   return res;
 }
 
-function some(array, func) {
-  for (var i = 0; i < array.length; i++) {
-    if (func(array[i])) {
+function some(arr, func) {
+  for (var i = 0; i < arr.length; i++) {
+    if (func(arr[i])) {
       return true;
     }
   }

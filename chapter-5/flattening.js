@@ -1,5 +1,5 @@
-function flatten(array) {
-  var flattened = array.reduce(function(a, b) {
+function flatten(arr) {
+  var flattened = arr.reduce(function(a, b) {
     return a.concat(b);
   });
   

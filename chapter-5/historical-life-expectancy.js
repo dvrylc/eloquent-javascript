@@ -41,16 +41,16 @@ var ancestry = JSON.parse("[\n  " + [
   '{"name": "Jacobus Bernardus van Brussel", "sex": "m", "born": 1736, "died": 1809, "father": "Jan van Brussel", "mother": "Elisabeth Haverbeke"}'
 ].join(",\n  ") + "\n]");
 
-function average(array) {
+function average(arr) {
   function plus(a, b) { return a + b; }
-  return array.reduce(plus) / array.length;
+  return arr.reduce(plus) / arr.length;
 }
 
 // Solution
-function groupBy(array, centuryCalc) {
+function groupBy(arr, centuryCalc) {
   var grouped = {};
   
-  array.forEach(function(person) {
+  arr.forEach(function(person) {
     var century = centuryCalc(person);
     
     if (grouped.hasOwnProperty(century)) {
